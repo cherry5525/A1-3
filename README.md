@@ -59,39 +59,52 @@ A1-3/
 ```bash
 git clone https://github.com/cherry5525/A1-3.git
 
+```
 
 ### 2. 패키지 설치
 ```bash
 pip install -r requirements.txt
 
+```
+
 ### 3. 환경 변수 설정
 ```
 OPENAI_API_KEY=발급받은_API_키
+
+```
 
 ### 4. 로컬 실행
 ```bash
 python api/recommend.py
 
-☁️ 배포 방법 (Vercel)
+```
+---
+
+
+## ☁️ 배포 방법 (Vercel)
 GitHub 저장소를 Vercel에 연동합니다.
 Vercel 프로젝트의 Settings → Environment Variables에서 환경 변수를 등록합니다.
 OPENAI_API_KEY : 발급받은 API 키 (codyssey API사용)
 main 브랜치에 push하면 자동으로 배포됩니다.
 배포 완료 후 발급된 URL에서 동작을 확인합니다.
-🔑 환경 변수
+
+## 🔑 환경 변수
 변수명	설명
 OPENAI_API_KEY	OpenAI API 인증 키 (codyssey API사용)
 ⚠️ API 키는 절대 코드에 직접 입력하지 않으며, .env 파일(로컬) 및 Vercel 환경 변수(배포)로만 관리합니다.
 .env 파일은 .gitignore에 등록되어 GitHub에 업로드되지 않습니다.
 
-🧪 AI 기능 동작 예시
+## 🧪 AI 기능 동작 예시
 상황	입력	결과
 정상 입력	여성 / 25 / 7 / 다이어트 / 샐러드	맞춤 식단 표시
 빈 입력	나이·기간 미입력	"⚠️ 나이와 기간을 입력해주세요!" 안내
 서버 오류	API 응답 실패	"😢 추천을 받지 못했어요. 잠시 후 다시 시도해주세요." 안내
 
+---
 
-🎯 과제 목표
+
+
+## 🎯 과제 목표
 
 1. HTML / CSS / JavaScript의 역할
 웹 페이지는 사람의 몸에 비유할 수 있다.
