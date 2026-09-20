@@ -29,7 +29,7 @@ OpenAI GPT가 사용자에게 딱 맞는 맞춤 식단을 추천해줍니다.
 |------|------|
 | Frontend | HTML, CSS, JavaScript (Vanilla) |
 | Backend | Python (Flask) - Vercel Serverless Functions |
-| AI API | OpenAI GPT (gpt-5-mini) |
+| AI API (codyssey API사용) | OpenAI GPT (gpt-5-mini) |
 | 배포 | Vercel |
 | 외부 라이브러리 | html2canvas, jsPDF (PDF 저장 기능) |
 
@@ -83,9 +83,13 @@ python api/recommend.py
 
 ## ☁️ 배포 방법 (Vercel)
 GitHub 저장소를 Vercel에 연동합니다.
+
 Vercel 프로젝트의 Settings → Environment Variables에서 환경 변수를 등록합니다.
+
 OPENAI_API_KEY : 발급받은 API 키 (codyssey API사용)
+
 main 브랜치에 push하면 자동으로 배포됩니다.
+
 배포 완료 후 발급된 URL에서 동작을 확인합니다.
 
 ## 🔑 환경 변수
@@ -259,6 +263,7 @@ API 주소가 올바른지 확인
 AI는 잘못된 코드도 생성할 수 있으므로, 오류의 원인을 스스로 설명할 수 있는 능력이 중요하다.
 
 전체 흐름 요약
+
 여섯 가지 개념은 하나의 흐름으로 연결된다.
 ```
 HTML/CSS/JS로 화면 구성
